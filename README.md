@@ -16,7 +16,7 @@ This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for 
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Download [automated build](https://cloud.docker.com/swarm/rabenda/repository/docker/rabenda/ubuntuwithmurphi3.1) from public [Docker Hub Registry](https://hub.docker.com/): `docker pull rabenda/ubuntuwithmurphi3.1`
+2. Download [automated build](https://hub.docker.com/r/rabenda/ubuntuwithmurphi3.1/) from public [Docker Hub Registry](https://hub.docker.com/): `docker pull rabenda/ubuntuwithmurphi3.1`
 
    (alternatively, you can build an image from Dockerfile: `docker build -t="rabenda/ubuntuwithmurphi3.1" github.com/rabenda/ubuntuwithmurphi3.1`)
 
