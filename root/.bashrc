@@ -46,4 +46,4 @@ source $HOME/.scripts/git-completion.sh
 source $HOME/.scripts/z.sh
 
 # Add Murphi3.1-fix/bin
-PATH="$PATH:/root/Murphi3.1-fix/bin"
+export PATH="$PATH:/root/Murphi3.1-fix/bin"
