@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 # Install.
 RUN \
@@ -15,6 +15,11 @@ RUN \
   apt-get install -y build-essential && \
   apt-get install -y software-properties-common && \
   apt-get install -y byobu curl git htop man unzip vim wget && \
+  cd /root
+  git clone https://github.com/Rabenda/Murphi3.1-fix.git
+  cd Murphi3.1-fix
+  cd src
+  make && make install
   rm -rf /var/lib/apt/lists/*
 
 # Add files.
