@@ -1,25 +1,26 @@
 ## Ubuntu Dockerfile
 
 
-This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for [Docker](https://www.docker.com/)'s [automated build](registry.cn-hangzhou.aliyuncs.com/personal_rabenda/ubuntu)
+This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for [Docker](https://www.docker.com/)'s [automated build](https://hub.docker.com/r/library/ubuntu/)
+
+## Murphi3.1-fix
+[automated build](https://github.com/Rabenda/Murphi3.1-fix)
 
 
 ### Base Docker Image
 
-* [ubuntu:16.04](https://registry.hub.docker.com/u/library/ubuntu/)
+* [ubuntu:16.04](https://hub.docker.com/r/library/ubuntu/)
 
 
 ### Installation
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Download [automated build](registry.cn-hangzhou.aliyuncs.com/personal_rabenda/ubuntu)
+2. Download [automated build](https://cloud.docker.com/swarm/rabenda/repository/docker/rabenda/ubuntuwithmurphi3.1) from public [Docker Hub Registry](https://hub.docker.com/): `docker pull rabenda/ubuntuwithmurphi3.1`
 
-   `docker pull dockerfile/ubuntu`
-
-   (alternatively, you can build an image from Dockerfile: `docker build -t="Rabenda/ubuntu" github.com/Rabenda/ubuntu`)
+   (alternatively, you can build an image from Dockerfile: `docker build -t="rabenda/ubuntuwithmurphi3.1" github.com/rabenda/ubuntuwithmurphi3.1`)
 
 
 ### Usage
 
-    docker run -it --rm personal_rabenda/ubuntu
+    docker run -it --rm rabenda/ubuntuwithmurphi3.1
