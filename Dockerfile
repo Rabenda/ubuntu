@@ -18,6 +18,7 @@ RUN \
   cd /root && \
   git clone https://github.com/Rabenda/Murphi3.1-fix.git && \
   cd Murphi3.1-fix && \
+  mkdir bin && \
   cd src && \
   make && make install && \
   rm -rf /var/lib/apt/lists/*
